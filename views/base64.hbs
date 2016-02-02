@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>截图base64</title>
+	<link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<form action="/capture/base64" target="/" method="get">
+			<div class="form-group">
+				<label>地址：</label>
+				<input class="form-control" type="url" name="url" />
+			</div>
+			<div class="form-group">
+				<label>width(option):</label>
+				<input class="form-control" name="width" type="text" />
+			</div>
+			<div class="form-group">
+				<label>height(option):</label>
+				<input class="form-control" name="height" type="text" />
+			</div>
+			<div class="form-group">
+				<label>file type:</label>
+				<select class="form-control" name="format">
+					<option value="jpeg">jpeg</option>
+					<option value="png">png</option>
+					<option value="gif">gif</option>
+				</select>
+			</div>
+			<!-- <div class="form-group">
+				<label>文件清晰度(option):</label>
+				<input class="form-control" name="quality" type="number" />
+			</div> -->
+			<div class="form-group">
+				<label>放大倍数(option):</label>
+				<input class="form-control" name="zoomFactor" type="number" />
+			</div>
+			<button type="submit" class="btn btn-info">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

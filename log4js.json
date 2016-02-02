@@ -1,0 +1,18 @@
+{
+    "appenders": [{
+    	"type": "console"
+    }, {
+        "type": "dateFile",
+        "filename": "log/access.log",
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "category": "access"
+    }, {
+        "type": "dateFile",
+        "filename": "log/cheese.log",
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "category": "cheese"
+    }],
+    "replaceConsole": true
+}
